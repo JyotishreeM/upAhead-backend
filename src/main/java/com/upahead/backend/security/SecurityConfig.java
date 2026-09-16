@@ -66,7 +66,10 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of("http://localhost:4200"));
+                List.of(
+                    "http://localhost:4200",
+                    "https://upahead-frontend-production.up.railway.app"
+                    ));
 
         configuration.setAllowedMethods(
                 List.of(
